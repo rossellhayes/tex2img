@@ -24,7 +24,7 @@
 #' )
 
 tex2img <- function(
-  tex, color = "black", background = "transparent", font = "arev",
+  tex, color = "black", background = "white", font = "arev",
   size = 8, type = "png"
 ) {
   err_invalid(color,      tex2img_colors)
