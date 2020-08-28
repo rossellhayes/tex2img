@@ -1,0 +1,74 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  # collapse = TRUE,
+  results = "asis",
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+
+library(tex2img)
+# remotes::install_github("GuangchuangYu/badger")
+library(badger)
+```
+
+# tex2img
+
+<!-- badges: start -->
+`r # badge_cran_release(color = "brightgreen")`
+`r badge_lifecycle("experimental")`
+`r badge_license(color = "blueviolet")`
+`r # badge_github_actions(action = "R-CMD-check")`
+`r # badge_codecov()`
+`r # badge_dependencies()`
+<!-- badges: end -->
+
+Convert TeX equations to images using [Sciweavers iTex2Img](http://www.sciweavers.org/free-online-latex-equation-editor)
+
+## Installation
+
+<!-- You can install the released version of **tex2img** from [CRAN](https://cran.r-project.org/) with: -->
+
+<!-- ```{r eval = FALSE} -->
+<!-- install.packages("tex2img") -->
+<!-- ``` -->
+
+Or the development version of **tex2img** from [GitHub](https://github.com/rossellhayes/tex2img) with:
+
+``` {r eval = FALSE}
+install_github("rossellhayes/tex2img")
+```
+
+## Usage
+
+**tex2img** allows TeX equations to be embedded in Markdown documents (like GitHub READMEs) as images.
+
+```{r eval = FALSE}
+`r tex2img("\\frac{22}{7}")`
+```
+
+`r tex2img("\\frac{22}{7}")`
+
+A number of options are provided to fine tune the image.
+
+```{r eval = FALSE}
+`r tex2img(
+  "\\frac{22}{7}", color = "ForestGreen", background = "RawSienna",
+  font = "Modern", size = 18, type = "jpg"
+)`
+```
+
+`r tex2img(
+  "\\frac{22}{7}", color = "White", background = "PineGreen",
+  font = "Modern", size = 18, type = "jpg"
+)`
+
+---
+
+Please note that **tex2img** is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

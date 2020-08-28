@@ -1,0 +1,23 @@
+Package: tex2img
+Title: Convert TeX equations to images
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alexander",
+           family = "Rossell Hayes",
+           role = c("aut", "cre", "cph"),
+           email = "alexander@rossellhayes.com",
+           comment = c(ORCID = "0000-0001-9412-0457"))
+Description: Convert TeX equations to images using 'Sciweavers iTex2Img' for
+    easier embedding in plaintext Markdown documents such as 'GitHub' READMEs.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Imports: 
+    rlang,
+    utils
+Suggests: 
+    crayon
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
