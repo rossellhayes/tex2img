@@ -37,10 +37,10 @@ install_github("rossellhayes/tex2img")
 (like GitHub READMEs) as images.
 
 ``` r
-`r tex2img("\\frac{22}{7}")`
+`r tex2img("\\frac{22}{7}", type = "jpg")`
 ```
 
-![](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B22%7D%7B7%7D&bc=white&fc=black&im=png&fs=8&ff=arev)
+![](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7B22%7D%7B7%7D&bc=white&fc=black&im=jpg&fs=8&ff=arev)
 
 A number of options are provided to fine tune the image.
 

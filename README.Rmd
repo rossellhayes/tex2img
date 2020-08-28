@@ -50,10 +50,10 @@ install_github("rossellhayes/tex2img")
 **tex2img** allows TeX equations to be embedded in Markdown documents (like GitHub READMEs) as images.
 
 ```{r eval = FALSE}
-`r tex2img("\\frac{22}{7}")`
+`r tex2img("\\frac{22}{7}", type = "jpg")`
 ```
 
-`r tex2img("\\frac{22}{7}")`
+`r tex2img("\\frac{22}{7}", type = "jpg")`
 
 A number of options are provided to fine tune the image.
 
